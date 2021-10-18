@@ -6,7 +6,7 @@
 1. When you try to upload to alamofire by this line but upload as .qt :
 
 
-    multipartFormData.append(data , withName: "video", fileName: "video.mp4" , mimeType: ".mp4")
+         multipartFormData.append(data , withName: "video", fileName: "video.mp4" , mimeType: ".mp4")
     
 
 2. You can add this extension to export as .mp4 : 
