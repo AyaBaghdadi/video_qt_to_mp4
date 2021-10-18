@@ -11,10 +11,10 @@
 
 2. You can add this extension to export as .mp4 : 
 
-    extension AVURLAsset { // it is copied from Stackoverflow
+         extension AVURLAsset { // it is copied from Stackoverflow
 
-     func exportVideo(presetName: String = AVAssetExportPresetHighestQuality, outputFileType: AVFileType = .mp4, fileExtension: String = "mp4", then completion: @escaping (URL?) -> Void)
-         {
+         func exportVideo(presetName: String = AVAssetExportPresetHighestQuality, outputFileType: AVFileType = .mp4, fileExtension: String = "mp4", then completion: @escaping (URL?) -> Void)
+           {
             let filename = url.deletingPathExtension().appendingPathExtension(fileExtension).lastPathComponent
             let outputURL = FileManager.default.temporaryDirectory.appendingPathComponent(filename)
 
