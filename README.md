@@ -5,6 +5,7 @@
 
 1. When you try to upload to alamofire by this line but upload as .qt :
 
+
     multipartFormData.append(data , withName: "video", fileName: "video.mp4" , mimeType: ".mp4")
     
 
